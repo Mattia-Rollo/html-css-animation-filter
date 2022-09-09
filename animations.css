@@ -21,11 +21,11 @@
     animation-timing-function: ease-in;
     /* animation-delay: 2s; */
     animation-iteration-count: 1;
-    animation-direction: alternate;
+    /* animation-direction: alternate; */
 }
 @keyframes ruota2{
     /* 0%{transform: rotate(0);} */
-    50% {transform: rotate(270deg);}
+    70% {transform: rotate(270deg);}
 }
 
 /* Esercizio 12 */
