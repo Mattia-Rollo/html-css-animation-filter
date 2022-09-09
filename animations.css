@@ -1,0 +1,29 @@
+/* Esercizio 10 */
+
+.ex-10-icon {
+    animation-name: ruota;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    /* animation-delay: 2s; */
+    animation-iteration-count: infinite;
+}
+@keyframes ruota{
+    0%{transform: rotate(0);}
+    100% {transform: rotate(360deg);}
+
+}
+
+/* Esercizio 11 */
+
+.ex-11-icon:hover {
+    animation-name: ruota2;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    /* animation-delay: 2s; */
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+}
+@keyframes ruota2{
+    0%{transform: rotate(0);}
+    100% {transform: rotate(270deg);}
+}
