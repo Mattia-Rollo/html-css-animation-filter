@@ -6,3 +6,14 @@
     background-color: red;
 }
 /* Esercizio 2 */
+.ex-2-square{
+    transition: width 1s ease-in-out, height 1s ease-in-out;
+}
+.ex-2-square:focus{
+    width: 500px;
+    height: 500px;
+}
+
+/* Esercizio 3 */
+
+.ex-3-square {}
