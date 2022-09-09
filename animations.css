@@ -17,31 +17,64 @@
 
 .ex-11-icon:hover {
     animation-name: ruota2;
-    animation-duration: 1s;
-    animation-timing-function: linear;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
     /* animation-delay: 2s; */
-    animation-iteration-count: 2;
+    animation-iteration-count: 1;
     animation-direction: alternate;
 }
 @keyframes ruota2{
-    0%{transform: rotate(0);}
-    100% {transform: rotate(270deg);}
+    /* 0%{transform: rotate(0);} */
+    50% {transform: rotate(270deg);}
 }
 
 /* Esercizio 12 */
 
 .ex-12-button:hover .ex-12-top-white {
     animation-name: mymove;
-    animation-duration: 1s;
-    animation-timing-function: ease;
+    animation-duration: 2s;
+    animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
 .ex-12-button:hover .ex-12-bottom-white {
-    animation-name: mymove;
-    animation-duration: 1s;
-    animation-timing-function: ease;
+    animation-name: mymove2;
+    animation-duration: 2s;
+    animation-timing-function: linear;
     animation-iteration-count: infinite;
+    /* animation-direction: reverse; */
 }
 @keyframes mymove {
-    50% {transform: translate(50px, 0);}
+    50% {transform: translate(115px, 0);}
+}
+@keyframes mymove2 {
+    50% {transform: translate(-95px, 0);}
+}
+/* Esercizio 13 */
+
+.ex-13-button:hover .ex-13-top-white {
+    background-color: brown;
+    animation-name: mymove3;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.ex-13-button:hover .ex-13-bottom-white {
+    animation-name: mymove4;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    /* animation-direction: reverse; */
+}
+@keyframes mymove3 {
+
+    from{left:0;}
+    25%{left:120px;}
+    50%{top:70px}
+    75%{left:0}
+    to {}
+
+
+}
+@keyframes mymove4 {
+    50% {transform: translate(-95px, 0);}
 }
