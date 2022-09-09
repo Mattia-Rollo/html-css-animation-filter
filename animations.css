@@ -52,29 +52,37 @@
 /* Esercizio 13 */
 
 .ex-13-button:hover .ex-13-top-white {
-    background-color: brown;
+   /* background-color: blue; */
     animation-name: mymove3;
     animation-duration: 2s;
     animation-timing-function: linear;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 1;
 }
 .ex-13-button:hover .ex-13-bottom-white {
+    /* background-color: blueviolet; */
     animation-name: mymove4;
     animation-duration: 2s;
     animation-timing-function: linear;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 1;
     /* animation-direction: reverse; */
 }
 @keyframes mymove3 {
+    0%{ left:10%; top: -10px;}
+    22% {left:90%; top: -10px;}
+    40%{left: 90%; top: 60px}
+    70%{left: -20%; top: 60px;}
+    80%{left:-20%; top:-10px;}
+    100%{left: 10%; top:-10px;}
 
-    from{left:0;}
-    25%{left:120px;}
-    50%{top:70px}
-    75%{left:0}
-    to {}
+    
 
 
 }
 @keyframes mymove4 {
-    50% {transform: translate(-95px, 0);}
+    0% {right: 20%; bottom: -10px;}
+    20% {right: 80%; bottom: -10px;}
+    40%{right: 80%; bottom: 60px;}
+    70%{right: -5%; bottom: 60px;}
+    80%{right: -5%; bottom:-10px;}
+    100%{right: 20%; bottom:-10px;}
 }
