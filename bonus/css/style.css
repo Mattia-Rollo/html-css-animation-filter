@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.debug{
+    
+    border: 1px solid black;
+}
+div {
+    width: 400px;
+    height: 400px;
+    background-image: url('../img/bitmap.svg');
+    animation-name: move;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    background-size:cover;
+}
+@keyframes move{
+    0% {background-position: 0;}
+    100% {background-position: 100%;}
+}
